@@ -5,31 +5,35 @@
 <head>
     <title>Weather App</title>
     <link rel="icon" href="/img/weather.png">
-    <link rel = "stylesheet" href = './css/styles.css'>
-   
+    <link rel="stylesheet" href='./css/styles.css'>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
+    
     <div class="main-content">
         {{>header}}
+        <hr>
         <p>Use this site to get your weather!</p>
 
-        <form>
+        <form class="form-inline">
 
-            <input placeholder="Location"> 
-            <button>Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
 
         </form>
 
         <p id="message-1"></p>
         <p id="message-2"></p>
 
+        {{>footer}}
     </div>
-    
-    {{>footer}}
 
-
-     <script src="/js/app.js"> </script>
+    <script src="/js/app.js"> </script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
 </body>
+
 
 </html>

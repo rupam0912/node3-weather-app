@@ -1,17 +1,18 @@
 body {
     color: #333333;
-    font-family: arial;
-    max-width: 650px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* max-width: 650px; */
     margin: 0 auto;
     padding: 0 16px;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 .main-content {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 60%;
+    margin: 0 auto;
 }
 
 footer {
@@ -19,12 +20,11 @@ footer {
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
-
 }
 
 header {
     margin-top: 16px;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
 }
 
 h1 {
@@ -32,13 +32,12 @@ h1 {
     margin-bottom: 16px;
 }
 
-
 header a {
-
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
-
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .potrait {
@@ -46,17 +45,28 @@ header a {
 }
 
 input {
-
     border: 1px solid #cccccc;
     padding: 8px;
-
 }
 
 button {
-    
     cursor: pointer;
     border: 1px solid #888888;
     background: #888888;
     padding: 8px;
 }
 
+p {
+    font-size: larger;
+}
+
+#message-1 {
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 667px) {
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+}
